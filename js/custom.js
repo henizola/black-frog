@@ -269,7 +269,7 @@
     });
   });
 
-  if (window.location.pathname === "/ventures.html") {
+  if (window.location.pathname.includes("ventures.html")) {
     $(".header").addClass("header-fixed");
   }
   $(window).on("scroll", function () {
@@ -284,7 +284,7 @@
     if (window.location.pathname === "/ventures.html") {
       $(".header").addClass("header-fixed");
     }
-    console.log(window.location.pathname);
+
     // BACK TO TOP
     if ($(this).scrollTop() > 100) {
       $("#back-top").fadeIn();
@@ -295,7 +295,6 @@
 })(jQuery);
 
 $("a").click(function (event) {
-  console.log(event.target.id);
   if (event.target.id === "logo-dark" && event.target.id !== "top") {
     window.location.href("index.html");
   } else if (event.target.id !== "top") {
