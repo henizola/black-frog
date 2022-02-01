@@ -4376,3 +4376,9 @@ a {
     max-width: 100% !important;
   }
 }
+
+.wd-ab {
+  height: 200px !important;
+  width: 100% !important;
+  object-fit: cover;
+}
