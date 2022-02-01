@@ -131,7 +131,7 @@ body.dark.blog-page ul.pagination li.active a {
   border: 3px solid #e4e4e4;
 }
 .footer .social-icons ul li a {
-  border: 2px solid #e4e4e4;
+  border: 0.5px solid #e4e4e4;
 }
 .footer {
   border-top: 2px solid #e4e4e4;

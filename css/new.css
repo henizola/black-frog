@@ -57,7 +57,7 @@ Version: 1.0
 @font-face {
   font-family: roslin;
   font-weight: bold;
-  src: url("../fonts/RoslindaleVariableItalicBeta-VF.ttf");
+  src: url("/fonts/RoslindaleVariableItalicBeta-VF.ttf");
 }
 
 body {
@@ -3958,7 +3958,7 @@ body.dark.blog-page .banner-blog-post .meta {
 
 .team {
   background-color: #fff !important;
-  padding: 20vh 15%;
+
   display: grid;
   grid-template-columns: 30% 70%;
   color: #333333 !important;
@@ -4289,90 +4289,4 @@ body {
 a {
   font-family: roslin !important;
   letter-spacing: 1px;
-}
-
-.update-desc {
-  margin-top: 0 !important;
-  padding-top: 0 !important;
-}
-
-.update-desc img {
-  width: 100% !important;
-  margin-top: 0 !important;
-}
-.update-title {
-  font-size: 45px !important;
-  line-height: 60px;
-  margin-top: 150px;
-}
-
-.update-top {
-  margin-top: 30px;
-  width: 300px;
-}
-
-.breake {
-  width: 70vw;
-  margin: 50px auto;
-  height: 5px;
-  background-color: black;
-}
-
-.left-news {
-  grid-template-columns: 30% 70%;
-}
-
-.right-news {
-  grid-template-columns: 70% 30%;
-}
-
-.update-news-left {
-  margin-left: 50px;
-}
-
-.top-right {
-  margin-left: calc(100% - 300px);
-}
-
-.news {
-  padding: 20vh 15%;
-}
-
-.right-news {
-  display: grid;
-  grid-template-columns: 65% 35%;
-  margin: 50px 0;
-}
-.left-news {
-  display: grid;
-  grid-template-columns: 35% 65%;
-  margin: 50px 0;
-}
-
-.update {
-  padding-top: 10vh;
-}
-
-.copy-right {
-  float: left;
-}
-
-@media screen and (max-width: 600px) {
-  .left-news {
-    grid-template-columns: 1fr;
-  }
-  .update-title {
-    margin-top: 0;
-    font-size: 30px !important;
-    line-height: 40px;
-  }
-  .left-news {
-    margin-top: 0;
-  }
-  .update {
-    padding: 100px 10% !important;
-  }
-  .up-exp {
-    max-width: 100% !important;
-  }
 }

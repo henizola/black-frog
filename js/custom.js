@@ -269,7 +269,11 @@
     });
   });
 
-  if (window.location.pathname.includes("ventures.html")) {
+  if (
+    window.location.pathname.includes("ventures.html") ||
+    window.location.pathname.includes("contact.html") ||
+    window.location.pathname.includes("update.html")
+  ) {
     $(".header").addClass("header-fixed");
   }
   $(window).on("scroll", function () {
@@ -281,7 +285,11 @@
       ? $(".header").addClass("header-fixed")
       : $(".header").removeClass("header-fixed");
 
-    if (window.location.pathname === "/ventures.html") {
+    if (
+      window.location.pathname.includes("ventures.html") ||
+      window.location.pathname.includes("contact.html") ||
+      window.location.pathname.includes("update.html")
+    ) {
       $(".header").addClass("header-fixed");
     }
 
