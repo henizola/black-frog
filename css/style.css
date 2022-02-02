@@ -60,6 +60,12 @@ Version: 1.0
   src: url("../fonts/RoslindaleVariableItalicBeta-VF.ttf");
 }
 
+@font-face {
+  font-family: old;
+  font-weight: bold;
+  src: url("../fonts/fontawesome-webfont﹖v=4.7.0.ttf");
+}
+
 body {
   font: 14px/22px "roslin", Arial, Helvetica, sans-serif;
   color: #6e6e6e;
@@ -4314,7 +4320,7 @@ a {
 .breake {
   width: 70vw;
   margin: 50px auto;
-  height: 5px;
+  height: 1px;
   background-color: black;
 }
 
@@ -4369,11 +4375,45 @@ a {
   .left-news {
     margin-top: 0;
   }
+  .right-news {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+  }
+  .update-news-left {
+    margin-left: 0;
+  }
+  .breake {
+    width: auto;
+  }
+  .oreder-1-new {
+    order: 1;
+  }
+  .order-2-new {
+    order: 2;
+  }
   .update {
     padding: 100px 10% !important;
   }
   .up-exp {
     max-width: 100% !important;
+  }
+  .main-title {
+    font-size: 12vw;
+    margin-bottom: 30px;
+  }
+  .navbar {
+    margin-top: -30px;
+  }
+  .navbar-toggler {
+    margin-top: 30px;
+  }
+  .exp {
+    max-width: 100% !important;
+  }
+  .header-inner {
+    padding-left: 10% !important;
+    padding-right: 10% !important;
   }
 }
 
@@ -4381,4 +4421,34 @@ a {
   height: 200px !important;
   width: 100% !important;
   object-fit: cover;
+}
+
+.member-desc {
+  font-family: "Raleway", sans-serif !important;
+}
+
+.top {
+  margin-bottom: 8vh !important;
+}
+
+.update-desc img {
+  height: 50% !important;
+  width: 100%;
+  object-fit: cover;
+}
+
+img {
+  /* transition-delay: 2s !important; */
+}
+img:hover {
+  animation: change 1.5s ease;
+}
+
+@keyframes change {
+  0% {
+    filter: grayscale(100%);
+  }
+  100% {
+    filter: grayscale(0%);
+  }
 }

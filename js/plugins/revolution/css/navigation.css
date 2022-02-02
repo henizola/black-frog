@@ -1083,7 +1083,7 @@ website:    http://www.themepunch.com
 	box-sizing:content-box;
 }
 .hades .tp-bullet {
-	width:3px;
+	width:2px;
 	height:3px;
 	position:absolute;
 	background:#888;	
@@ -1354,7 +1354,7 @@ website:    http://www.themepunch.com
 }
 
 .hebe .tp-bullet {
-  width:3px;
+  width:2px;
   height:3px;
   position:absolute;
   background:#fff;  
@@ -1958,7 +1958,8 @@ website:    http://www.themepunch.com
 .metis .tp-bullet { 
     opacity:1;
     width:50px;
-    height:50px;    
+    height:50px;  
+
     padding:3px;
     background:#000;
     background-color:rgba(0,0,0,0.25);
@@ -1967,7 +1968,35 @@ website:    http://www.themepunch.com
     transition:all 0.3s;
     -webkit-transition:all 0.3s;
     border-radius:50%;
+
+
   }
+  .metis :nth-child(1){
+margin-left:0px;
+  }
+
+  .metis :nth-child(2){
+    margin-left:2px;
+      }
+      .metis :nth-child(3){
+        margin-left:4px;
+          }
+          .metis :nth-child(4){
+            margin-left:6px;
+              }
+              .metis :nth-child(5){
+                margin-left:8px;
+                  }
+                  .metis :nth-child(6){
+                    margin-left:10px;
+                      } .metis :nth-child(7){
+                        margin-left:12px;
+                          } .metis :nth-child(8){
+                            margin-left:14px;
+                              } .metis :nth-child(9){
+                                margin-left:16px;
+                                  }
+
 
 .metis .tp-bullet-image {
 
@@ -2023,9 +2052,15 @@ website:    http://www.themepunch.com
   background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(119,119,119,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#ffffff", endColorstr="#777777", GradientType=0 );
  width:2px !important;
- height:40px!important;
- margin-top:-18px;
+ height:50px!important;
+ margin-top:-28px;
+
       }
+      .metis .tp-bullet
+{
+  /* bordeR:2px solid red; */
+  padding-left:2px!important;
+}
 .metis .tp-bullet-title:after {
         content:" ";
         position:absolute;
@@ -2368,6 +2403,7 @@ website:    http://www.themepunch.com
       transition: opacity 0.3s ease;
 	  width:13px;height:13px;
 	  border:2px solid #fff;
+    padding-left:10px;
  }
 .zeus .tp-bullet:after {
   content: "";
