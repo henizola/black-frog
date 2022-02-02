@@ -309,3 +309,23 @@ $("a").click(function (event) {
     window.location.replace(event.target.href);
   }
 });
+
+$(".hover-black").hover(mouseEnter, mouseLeave);
+
+function mouseEnter() {
+  console.log($(this).find("img"));
+  $(this).attr("src", "../assets/hover-black.png");
+}
+function mouseLeave() {
+  $(this).attr("src", "../assets/logo-black.png");
+}
+
+$(".hover-white").hover(mouseEnter, mouseLeave);
+
+function mouseEnter() {
+  console.log($(this).find("img"));
+  $(this).attr("src", "../assets/hover-black.png");
+}
+function mouseLeave() {
+  $(this).attr("src", "../assets/logo-black.png");
+}
