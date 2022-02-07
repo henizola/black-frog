@@ -1275,6 +1275,10 @@ body.big-triangle .footer:before {
   border-bottom: none;
 }
 
+.logo {
+  margin-top: -20px;
+}
+
 body.big-triangle .footer {
   border-top: none;
 }
@@ -1480,6 +1484,7 @@ a:hover {
 }
 .header.header-fixed .logo a img.logo-light {
   opacity: 0;
+  display: none;
 }
 .header.header-fixed .logo a img.logo-dark {
   opacity: 1;
@@ -4451,4 +4456,12 @@ img:hover {
   100% {
     filter: grayscale(0%);
   }
+}
+
+img[alt="logo-dark"]:hover {
+  content: url("../assets/hover-black.png");
+}
+
+img[alt="logo-light"]:hover {
+  content: url("../assets/hover-white.png");
 }

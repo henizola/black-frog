@@ -305,27 +305,9 @@
 $("a").click(function (event) {
   if (event.target.id === "logo-dark" && event.target.id !== "top") {
     window.location.href("index.html");
-  } else if (event.target.id !== "top") {
+  } else if (event.target.id !== "top" && event.target.id !== "logo-light") {
     window.location.replace(event.target.href);
+  } else {
+    window.location.href("index.html");
   }
 });
-
-$(".hover-black").hover(mouseEnter, mouseLeave);
-
-function mouseEnter() {
-  console.log($(this).find("img"));
-  $(this).attr("src", "../assets/hover-black.png");
-}
-function mouseLeave() {
-  $(this).attr("src", "../assets/logo-black.png");
-}
-
-$(".hover-white").hover(mouseEnter, mouseLeave);
-
-function mouseEnter() {
-  console.log($(this).find("img"));
-  $(this).attr("src", "../assets/hover-black.png");
-}
-function mouseLeave() {
-  $(this).attr("src", "../assets/logo-black.png");
-}
