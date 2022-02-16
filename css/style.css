@@ -97,6 +97,7 @@ body {
 .portfolio .container {
   padding: 70px 0 !important;
 }
+
 hr {
   margin-top: 25px;
 }
@@ -4199,7 +4200,8 @@ select:focus {
 }
 
 .footer .container {
-  height: 75vh !important;
+  min-height: 75vh !important;
+  height: fit-content;
 }
 
 h1 {
@@ -4268,6 +4270,7 @@ h3 {
   }
   .footer h1 {
     font-size: 35px;
+    line-height: 40px;
   }
   .footer-links {
     display: grid;
@@ -4296,6 +4299,7 @@ h3 {
 
 body {
   scroll-behavior: smooth;
+  position: relative;
 }
 
 .navbar-toggler {
@@ -4482,40 +4486,40 @@ img[alt="logo-light"]:hover {
 }
 
 ::placeholder {
-  color: black;
+  color: #979797;
   opacity: 1; /* Firefox */
 }
 
 :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
-  color: black;
+  color: #979797;
 }
 
 ::-ms-input-placeholder {
   /* Microsoft Edge */
-  color: black;
+  color: #979797;
 }
 
 textarea::-webkit-input-placeholder {
-  color: black;
+  color: #979797;
 }
 
 textarea:-moz-placeholder {
   /* Firefox 18- */
-  color: black;
+  color: #979797;
 }
 
 textarea::-moz-placeholder {
   /* Firefox 19+ */
-  color: black;
+  color: #979797;
 }
 
 textarea:-ms-input-placeholder {
-  color: black;
+  color: #979797;
 }
 
 textarea::placeholder {
-  color: black;
+  color: #979797;
 }
 
 a {
@@ -4565,4 +4569,34 @@ a:hover {
 
 .tp-splitted {
   margin-top: -20px !important;
+}
+
+.wrapper {
+  background-color: #000;
+}
+
+.our-team {
+  background-color: #fff;
+}
+
+.our-exp {
+  background-color: #fff;
+}
+
+.update {
+  background-color: #fff;
+}
+
+input {
+  color: #000 !important;
+}
+
+input {
+  color: #000 !important;
+}
+
+@media screen and (max-width: 470px) {
+  #our-vision {
+    padding-top: 100px;
+  }
 }
