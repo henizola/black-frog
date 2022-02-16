@@ -1976,25 +1976,25 @@ margin-left:0px;
   }
 
   .metis :nth-child(2){
-    margin-left:2px;
+    margin-left:3px;
       }
       .metis :nth-child(3){
-        margin-left:4px;
+        margin-left:6px;
           }
           .metis :nth-child(4){
-            margin-left:6px;
+            margin-left:9px;
               }
               .metis :nth-child(5){
-                margin-left:8px;
+                margin-left:12px;
                   }
                   .metis :nth-child(6){
-                    margin-left:10px;
+                    margin-left:15px;
                       } .metis :nth-child(7){
-                        margin-left:12px;
+                        margin-left:18px;
                           } .metis :nth-child(8){
-                            margin-left:14px;
+                            margin-left:21px;
                               } .metis :nth-child(9){
-                                margin-left:16px;
+                                margin-left:24px;
                                   }
 
 
@@ -2699,8 +2699,8 @@ height:20px!important;
 }
 
 .erinyen.tparrows:before{
-  display: none!important;
+
 }
 .tparrows{
-  display: none!important;
+
 }

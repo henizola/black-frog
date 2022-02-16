@@ -1593,7 +1593,7 @@ website:   	http://www.themepunch.com
   border-style: none;
   border-width: 0;
   color: rgba(255, 255, 255, 1);
-  font-family: rosline;
+
   font-size: 70px;
   font-style: normal;
   font-weight: 800;
@@ -1610,15 +1610,23 @@ website:   	http://www.themepunch.com
   border-style: none;
   border-width: 0;
   color: rgba(255, 255, 255, 1);
-  font-family: rosline;
-  font-size: 13px;
+
+  font-size: 15px !important;
   font-style: normal;
   font-weight: 500;
-  letter-spacing: 4px;
-  line-height: 20px;
+  letter-spacing: 1px;
+  line-height: 24px !important;
   padding: 0;
   text-align: left;
   text-decoration: none;
+  max-width: 70vw !important;
+}
+
+@media screen and (max-width: 600px) {
+  .tp-caption.NotGeneric-SubTitle,
+  .NotGeneric-SubTitle {
+    max-width: 95vw !important;
+  }
 }
 
 .tp-caption.NotGeneric-CallToAction,

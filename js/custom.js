@@ -272,7 +272,8 @@
   if (
     window.location.pathname.includes("ventures.html") ||
     window.location.pathname.includes("contact.html") ||
-    window.location.pathname.includes("update.html")
+    window.location.pathname.includes("update.html") ||
+    window.location.pathname.includes("about")
   ) {
     $(".header").addClass("header-fixed");
   }
@@ -288,7 +289,8 @@
     if (
       window.location.pathname.includes("ventures.html") ||
       window.location.pathname.includes("contact.html") ||
-      window.location.pathname.includes("update.html")
+      window.location.pathname.includes("update.html") ||
+      window.location.pathname.includes("about")
     ) {
       $(".header").addClass("header-fixed");
     }
@@ -303,11 +305,33 @@
 })(jQuery);
 
 $("a").click(function (event) {
-  if (event.target.id === "logo-dark" && event.target.id !== "top") {
+  if (event.target.target === "_blank") {
+    window.open(event.target.href, "_blank").focus();
+  } else if (
+    event.target.id === "top" ||
+    event.target.innerHTML === "learn more about us"
+  ) {
+    console.log("called");
+  } else if (event.target.id === "logo-dark" && event.target.id !== "top") {
     window.location.href("index.html");
   } else if (event.target.id !== "top" && event.target.id !== "logo-light") {
-    window.location.replace(event.target.href);
+    window.location.href = event.target.href;
+    // console.log("here");
   } else {
     window.location.href("index.html");
   }
 });
+
+// $(".hover-black").hover(mouseEnter, mouseLeave);
+
+// function mouseEnter() {
+//   console.log($(this).find("img"));
+//   $(this).attr("src", "../assets/hover-black.png");
+// }
+// function mouseLeave() {
+//   $(this).attr("src", "../assets/logo-black.png");
+// }
+
+// document.getElementById("logo-dark").addEventListener("mouseover", function () {
+//   this.src = "../assets/hover-black.png";
+// });
